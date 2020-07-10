@@ -291,7 +291,7 @@
                     <!-- Sidebar user panel -->
                     <div class="user-panel">
                         <div class="pull-left image">
-                            <img src="img/avatar3.png" class="img-circle" alt="User Image" />
+                           
                         </div>
                         <div class="pull-left info">
                             <p>Hello, Nolwazi</p>
@@ -367,17 +367,17 @@
                                 	 <!-- Color Picker -->
                                     <div class="form-group">
                                         <label>Date:</label>                                         
-                                        <input type="date" name="date" class="form-control my-colorpicker1"/>
+                                        <input type="date" name="date" class="form-control"/>
                                     </div><!-- /.form group -->
                                     <div class="form-group">
                                         <label>Amount:</label>                                         
-                                        <input type="text" name="amount" class="form-control my-colorpicker1"/>
+                                        <input type="text" name="amount" class="form-control"/>
                                     </div><!-- /.form group -->
 
                                    <div class="form-group">
                                         <label>Deed Number:</label>                                         
                                         
-                                        <input type="text" name="deedno" class="form-control my-colorpicker1"/>
+                                        <input type="text" name="deedno" class="form-control"/>
                                     </div><!-- /.form group -->
 
                                  

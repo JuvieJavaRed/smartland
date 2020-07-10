@@ -367,22 +367,22 @@
                                 	 <!-- Color Picker -->
                                     <div class="form-group">
                                         <label>Name:</label>                                         
-                                        <input type="text" name="name" class="form-control my-colorpicker1"/>
+                                        <input type="text" name="name" class="form-control"/>
                                     </div><!-- /.form group -->
                                     <div class="form-group">
                                         <label>Surname:</label>                                         
-                                        <input type="text" name="surname" class="form-control my-colorpicker1"/>
+                                        <input type="text" name="surname" class="form-control"/>
                                     </div><!-- /.form group -->
 
                                    <div class="form-group">
                                         <label>Deed Number:</label>                                         
                                         
-                                        <input type="text" name="deedno" class="form-control my-colorpicker1"/>
+                                        <input type="text" name="deedno" class="form-control"/>
                                     </div><!-- /.form group -->
 
                                    <div class="form-group">
                                         <label>Address:</label>                                         
-                                        <input type="text" name="address" class="form-control my-colorpicker1"/>
+                                        <input type="text" name="address" class="form-control"/>
                                     </div><!-- /.form group -->
                                     </div>
                                     <button type="submit" class="btn btn-primary">Submit</button>

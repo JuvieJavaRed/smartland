@@ -78,7 +78,7 @@
                     <!-- Sidebar user panel -->
                     <div class="user-panel">
                         <div class="pull-left image">
-                            <img src="img/avatar3.png" class="img-circle" alt="User Image" />
+                           
                         </div>
                         <div class="pull-left info">
                             <p>Hello, Nolwazi</p>
@@ -160,7 +160,7 @@
                                                 <th></th>
                                                 <th>Deed No</th>
                                                 <th>Address</th>
-                                                <th>City</th>
+                                                
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -177,7 +177,7 @@
                                                     </td>
                                                     <td><c:out value="${student.deedno}" /></td>
                                                     <td><c:out value="${student.address}" /></td>
-                                                    <td><c:out value="${student.city}" /></td>
+                                                   
                                                 </tr>
                                             </c:forEach>
                                         </tbody>

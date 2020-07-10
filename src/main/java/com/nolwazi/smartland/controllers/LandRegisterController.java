@@ -37,7 +37,7 @@ public class LandRegisterController {
         return model;
     }
     
-    @RequestMapping(value = "/createrates")
+    @RequestMapping(value = "/createland")
     public ModelAndView createLand(ModelAndView model) throws IOException{
     	model.setViewName("create_land");
     	return model;

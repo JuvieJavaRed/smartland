@@ -59,7 +59,7 @@ public class RatesController {
     	return model;
     }
     
-    @RequestMapping(value = "/ratesdeposit")
+    @RequestMapping(value = "/createrates")
     public ModelAndView loadratespage(ModelAndView model) {
     	model.setViewName("create_rates");
     	return model;
