@@ -87,9 +87,9 @@
                         </div>
                     </div>
                     <!-- search form -->
-                    <form action="#" method="get" class="sidebar-form">
+                    <form action="${pageContext.request.contextPath}/deedsearch" method="post" class="sidebar-form">
                         <div class="input-group">
-                            <input type="text" name="q" class="form-control" placeholder="Search..."/>
+                            <input type="text" name="deedno" class="form-control" placeholder="Search..."/>
                             <span class="input-group-btn">
                                 <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
                             </span>
@@ -148,7 +148,7 @@
                         <div class="col-xs-12">
                             <div class="box">
                                 <div class="box-header">
-                                <a href="${pageContext.request.contextPath}/create" class="btn btn-primary"></a>
+                                <a href="${pageContext.request.contextPath}/createland" style="float:right; margin:5px;" class="btn btn-primary">Assign Land</a>
                                     <h3 class="box-title">Land Owner Registry</h3>                                    
                                 </div><!-- /.box-header -->
                                 <div class="box-body table-responsive">

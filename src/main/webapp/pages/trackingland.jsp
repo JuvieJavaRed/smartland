@@ -6,7 +6,7 @@
 
 <!DOCTYPE html>
 <html>
-    <%@page import="nolwazi.fproject.landregistry.entities2.Tracking"%>
+    <%@page import="com.nolwazi.smartland.entities.*"%>
             <%@page import="java.util.ArrayList"%>
     <%@page import="java.util.List"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -17,7 +17,7 @@
         <title>Land Registry Blockchain</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
-        <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- font Awesome -->
         <link href="resources/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <!-- Ionicons -->

@@ -30,10 +30,48 @@ public class LandRegisterController {
     @RequestMapping(value = "/landowner")
     public ModelAndView load_rates(ModelAndView model, HttpServletRequest request) throws IOException {
        
-    	 List <LandOwner> students = landownerrepository.findAll();
-         model.addObject("students", students);
+    	List <LandOwner> students = landownerrepository.findAll();
+        model.addObject("students", students);
         model.setViewName("landregister");
 
         return model;
+    }
+    
+    @RequestMapping(value = "/createrates")
+    public ModelAndView createLand(ModelAndView model) throws IOException{
+    	model.setViewName("create_land");
+    	return model;
+    }
+    
+    @RequestMapping(value = "/deedsearch")
+    public ModelAndView searchByDeedNo(ModelAndView model,HttpServletRequest request) throws IOException {
+    	String deedno = request.getParameter("deedno");
+    	List <LandOwner> students = landownerrepository.findByDeedno(deedno);
+    	model.addObject("students", students);
+        model.setViewName("landregister");
+    	return model;
+    }
+    
+    @RequestMapping(value = "/landdeposit")
+    public ModelAndView landDeposit(ModelAndView model, HttpServletRequest request) throws IOException {
+    	String name = request.getParameter("name");
+    	String surname = request.getParameter("surname");
+    	String deedno = request.getParameter("deedno");
+    	String address = request.getParameter("address");
+    	
+    	LandOwner landowner = new LandOwner();
+    	landowner.setAddress(address);
+    	landowner.setDeedno(deedno);
+    	landowner.setName(name);
+    	landowner.setSurname(surname);
+    	
+    	landownerrepository.save(landowner);
+    	
+    	List <LandOwner> students = landownerrepository.findAll();
+        model.addObject("students", students);
+        model.setViewName("landregister");
+
+        return model;
+    	
     }
 }

@@ -6,6 +6,12 @@
 
 <!DOCTYPE html>
 <html>
+ <%@page import="com.nolwazi.smartland.entities.Rates"%>
+            <%@page import="java.util.ArrayList"%>
+    <%@page import="java.util.List"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <head>
         <meta charset="UTF-8">
         <title>Land Registry Blockchain</title>
@@ -175,7 +181,8 @@
                         <div class="col-xs-12">
                             <div class="box">
                                 <div class="box-header">
-                                    <h3 class="box-title">Rates Owing Registry</h3>                                    
+                                    <h3 class="box-title">Rates Paid Registry</h3>
+                                    <a href="${pageContext.request.contextPath}/createrates" style="float:right; margin:5px;" class="btn btn-primary">Create Rates</a>                                    
                                 </div><!-- /.box-header -->
                                 <div class="box-body table-responsive">
                                     <table id="example2" class="table table-bordered table-hover">
@@ -186,23 +193,21 @@
                                                 <th></th>
                                                 <th>City</th>
                                                 <th>Amount</th>
-                                                <th>Date</th
-												<th>Status</th>
-                                            </tr>
+                                            	</tr>
                                         </thead>
                                            <tbody>
                                             <tr>
                                                 <c:forEach  var="student" items= '<%= request.getAttribute("rateslist")%>' >
                                                    
                                                     <td><c:out value="${student.deedno}" /></td>
-                                                     <td><c:out value="${student.address}" /></td>
+                                                	 <td><c:out value="${student.address}" /></td>
                                                     <td>
                                                         <input type="button" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                             <a class="dropdown-item" href="${pageContext.request.contextPath}/viewStudent?id=${student.id}" >View</a> <a class="dropdown-item" href="${pageContext.request.contextPath}/adjustStudent?id=${student.id}" >Adjust</a>  <a class="dropdown-item" href="${pageContext.request.contextPath}/disposeAsset?id=${student.id}">Dispose</a>
                                                         </div>
                                                     </td>
-                                                    <td><c:out value="${student.city}" /></td>
+                                                   
                                                     <td><c:out value="${student.amount}" /></td>
                                                     <td><c:out value="${student.date}" /></td>
                                                 </tr>
