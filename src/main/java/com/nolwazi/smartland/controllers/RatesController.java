@@ -32,7 +32,7 @@ public class RatesController {
     public ModelAndView load_rates(ModelAndView model, HttpServletRequest request) throws IOException {
         
        List <Rates> rateslist = ratesrepository.findAll();
-       model.addObject("ratelist", rateslist);
+       model.addObject("rateslist", rateslist);
        model.setViewName("rates");
        return model;
     }
@@ -47,12 +47,12 @@ public class RatesController {
     	Rates rates = new Rates();
     	rates.setAmount(amount);
     	rates.setDeedno(deedno);
-    	rates.setAmount(amount);
+    	rates.setDate(date);
     	
     	ratesrepository.save(rates);
     	
     	List <Rates> rateslist = ratesrepository.findAll();
-        model.addObject("ratelist", rateslist);
+        model.addObject("rateslist", rateslist);
         model.setViewName("rates");
         
     	

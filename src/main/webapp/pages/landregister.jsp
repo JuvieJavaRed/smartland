@@ -89,7 +89,7 @@
                     <!-- search form -->
                     <form action="${pageContext.request.contextPath}/deedsearch" method="post" class="sidebar-form">
                         <div class="input-group">
-                            <input type="text" name="deedno" class="form-control" placeholder="Search..."/>
+                            <input type="text" name="deedno" class="form-control" placeholder="Enter DeedNo..."/>
                             <span class="input-group-btn">
                                 <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
                             </span>
@@ -157,7 +157,7 @@
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Surname</th>
-                                                <th></th>
+                                                <th>Actions</th>
                                                 <th>Deed No</th>
                                                 <th>Address</th>
                                                 

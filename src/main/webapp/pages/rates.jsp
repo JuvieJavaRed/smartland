@@ -189,8 +189,8 @@
                                         <thead>
                                             <tr>
                                                 <th>Deed No</th>
-                                                <th>Address</th>
-                                                <th></th>
+                                                
+                                                <th>Actions</th>
                                                 <th>City</th>
                                                 <th>Amount</th>
                                             	</tr>
@@ -200,7 +200,6 @@
                                                 <c:forEach  var="student" items= '<%= request.getAttribute("rateslist")%>' >
                                                    
                                                     <td><c:out value="${student.deedno}" /></td>
-                                                	 <td><c:out value="${student.address}" /></td>
                                                     <td>
                                                         <input type="button" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
